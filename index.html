@@ -45,16 +45,37 @@
         
         
             <div class="ico">
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-youtube"></i>
-                <i class="fa-brands fa-github"></i>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
             </div>
 
-            <div class="scroll-down">
-               <i class="fa-solid fa-caret-down"></i>
-            </div>
+            <section class="paint">
+                <div class="paint-text">
+                    <h5>1# PANIT</h5>
+                    <h4>THE BEST PAINT AND NFT</h4>
+                    <h1>PAINTSPLASH</h1>
+                </div>
+            </section>
 
-            <div class="ORDEN-LG-2">
+            <button class=abrir-menu id="abrir" ><i class="fa-solid fa-bars"></i></button>
+            <nav class="nav" id="nav">
+                <button class=cerrar-menu id="cerrar" ><i class="fa-solid fa-x"></i></button>
+                <ul class="nav-list">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#">PAINT</a></li>
+                    <li><a href="#">POPULAR</a></li>
+                    <li><a href="#">LOGIN</a></li>
+                    <li><a href="#">REGISTER</a></li>
+                    
+
+                    
+                </ul>
+            </nav>
+
+            <div class="ico-2">
                 <!--shopping cart-->
                 <button class="btn position-relative shopping" type="button">
                     <i class="fa-solid fa-cart-shopping fa-2xl "></i>
@@ -81,22 +102,10 @@
             </div>
 
         
-            <button class=abrir-menu id="abrir" ><i class="fa-solid fa-bars"></i></button>
-            <nav class="nav" id="nav">
-                <button class=cerrar-menu id="cerrar" ><i class="fa-solid fa-x"></i></button>
-                <ul class="nav-list">
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                    <li><a href="#">PAINT</a></li>
-                    <li><a href="#">POPULAR</a></li>
-                    <li><a href="#">COLLECTION</a></li>
-                     
+            
+            
+            
 
-                    
-                </ul>
-            </nav>
-        
             <!--
             <button class="navbar-toggler boder-0" type="button" data-bs-toggle="collapse"
             data-bs-target="#navMenu">
@@ -134,14 +143,55 @@
 
     </nav>
 
+    <!--
     <header id="header" class="vh100 carousel slide" 
     db-bs-ride="carousel" style="padding-top:104px;">
-        
+        <div class="container h-100 d-flex align-item-center carousel-inner">
+            <div class="text-center-carousel-item active">
+                <H2 class="text-capitalize text dark">Best Paint</H2>
+                <h1 class="py-3 text-upperca fw-bold text-dark">
+                    new paint avillable
+                </h1>
+                <a href="#" class="btn mt-3 text-uppercase">shop now</a>
+            </div>
+        </div>
     </header>
+    -->
 
+    <!--Collection--->
+    <section id="collection" class="py-5">
+        <div class="container">
+            <div class="tittle text-center">
+                <h2 class="position-relativa-d-inline-block">
+                    NeW collection
+                </h2>
+            </div>
+
+            <div class="">
+                <div class="d-flex flex-wrap justify-content-center mt-5">
+                    <button class="btn m-2 active-filter-btn" data-filter="*" type="button">
+                        all
+                    </button>
+                    <button class="btn m-2" data-filter=".best" type="button">
+                        Best sellers
+                    </button>
+                    <button class="btn m-2" data-filter=".feat" type="button">
+                        Featured
+                    </button>
+                    <button class="btn m-2" data-filter=".new" type="button">
+                        New prints
+                    </button>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
 
 <!--JQUERY-->
 <script src="./JS/jquery-3.7.1.js"></script>
+
+    <!--isotope-->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
 
     <!--My JS-->
     <script src="./JS/app.js"></script>
