@@ -1,159 +1,151 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 :root{
-    --green:rgb(255,0,0);
+    --red1:rgb(255, 247, 0);
+    --brown:rgb(230, 32, 32);
+    --blue:rgb(73, 199, 48);
+    --red:rgba(255, 255, 255, 0);
+    --green:rgb(155, 39, 39);
+    --pink:#34a4e5;
+    --white:rgb(255, 255, 255);
+}
+.carta {
+    background:rgb(245, 245, 245);
+}
+body{
+    /*Agregar fuente*/
 }
 
-.bg-color {
+.text-primary{
+    color: var(--brown) !important;
+}
+
+.text-success{
+    color: black !important;
+}
+
+/*buttons*/
+.btn:not(.nav-btns button):hover{
+    background-color: var(--green);
+    color: white;
+    border-color: var(--green);
+    transition: 0.5S;
+}
+.btn:not(.nav-btns button){
+    background-color: white;
+    color: black;
+    border: 2px solid gray;
+    transition: 0.5S;
+    padding: 10px 28px;
+    border-radius: 25px;
+}
+.bg-primary{
+    background-color: var(--green) !important;
+}
+.bg-green1{
     background-color: var(--green);
 }
 
-.text{
-    font-family: 'Courier New', Courier, monospace;
+/*Text color*/
+.text-primary{
+    color: none !important;
+    background-color: none;
+}
+/*NavBar*/
+nav{
+    transition: 0.5s;
+
 }
 
 
 
-.paint-text{
-    position: absolute;
-    top: 230px;
+.navbar-ani{
+    background-color: var(--green);
+    transition: 0.5s;
+}
+.navbar-brand span{
+    letter-spacing: 2px;
 }
 
-.ico{
-    text-decoration: none;
-    position: absolute;
-    top: 230px;
-    padding: 0 9%;
-    transform: translateY(-5);
-    
-    
-      
+.nav-link:hover{
+    color:black !important;
+    transition: 0.5s;
 }
 
-
-
-.ico i{
-    display:block;
-    margin: 26px 0;
-    font-size: 24px;
-    color: black;
-    transition: all .50s ease;
-    display:block;
-    
-    
-   
+.nav-item{
+    border-bottom: 0.5px solid rgb(0, 0, 0);
 }
 
-.ico i:hover{
-    color: #585858;
-    transform: translateY(-5px);
+/*header*/
+#header{
+    background: url(../SCR/fondo3.png) top/cover no-repeat;
 }
 
-.nav-list{
-    list-style-type: none;
-    display: flex;
-    gap: 1.30rem;
-    
+.pinture{
+    background: url(../SCR/fondo2.jpg) ;
+}
+
+.carousel-inner h1{
+    font-size: 60px;
+}
+/* title */
+.title h2::before{
+    position: relative;
+    content: ".";
+    color: var(--green);
+    width: 4px;
+    height: 50px;
+    background-color: var(--green);
+    left: -20px;
 
 }
 
-.nav-list li a{
-    text-decoration: none;
-    color: #313131;
-    font-family: sans-serif;
-    font-size: 25px;
-    
-    
+.best{
+    border-radius: 20px;
 }
 
-.nav-list li a:hover{
-    transition: all .50s ease;
-    border-radius: 10px;
-    color:#585858;
-    
-    
-}
 
-.abrir-menu{
-    display: none;
-}
-.cerrar-menu{
-    display: none;
-}
-
-@media screen and (max-width: 550px){
-    .abrir-menu{
-        display: block;
-        border: 0; 
-        font-size: 1.25rem;
-        background-color: transparent;
-        cursor: pointer;
-        color: black;
-    }
-
-    .cerrar-menu{
-        display: block;
-        border: 0; 
-        font-size: 1.25rem;
-        background-color: transparent;
-        cursor: pointer;
-        color: white;
-        
-    }
-    
-    .nav{
-        opacity: 0;
-        visibility: hidden;
-    
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        gap: 1rem;
-        position: absolute;
-        top: 0;
-        right: 0;
-        right: 0;
-        background: #313131;
-        padding: 2rem;
-        box-shadow: 0 0 0 100vmax rgb(0, 0, 0, .5);
-        opacity: 1;
-        
-    }
-
-    .nav.visible{
-        opacity: 1;
-        visibility: visible;
-    }
-
-    .nav-list {
-        flex-direction: column;
-        align-items: end;
-    }
-
-    .nav-list li a{
-        text-decoration: none;
-        color: #ffffff;
-        font-family: sans-serif;
-    }
-
-    .ico-2{
-        padding-right: 10px;
-    }
-}
-
-.bg-primary {
-    font-size: 11px;
-}
-
-.splash-img{
-    margin-left: 569px;
-    margin-top: 80px;
-}
-
-.paint-text h5{
+.collection-img span{
+    top: 15px;
+    right: 20px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
     align-items: center;
+}
+
+.collection-img img{
+    border-radius: 20px;
+}
+
+.raiting span{
+    background-color: none;
+    
+}
+.img-r{
+    border-radius: 20px;
+}
+
+#newsletter{
+    background-color: rgb(255, 255, 255);
+}
+
+#newsletter p{
+    max-width: 600px;
+}
+
+#newsletter .input-group{
+    max-width: 500px;
+}
+
+#newsletter .form-control{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+
+/*media queries*/
+@media(min-width:992px){
+    .nav-item{
+        border-bottom: none;
+    }
 }
