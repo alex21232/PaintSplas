@@ -1,7 +1,7 @@
 let navbar = document.getElementById("navbar")
 
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 300){
+    if (window.scrollY > 200){
         navbar.classList.add("na3")
     } else {
         navbar.classList.toggle("navbar-ani")
