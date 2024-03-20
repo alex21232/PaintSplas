@@ -1,3 +1,7 @@
+La pagina
+https://paintsplash.netlify.app/
+
+
 
 Lenguajes De Codigos
 
@@ -34,4 +38,7 @@ Que Pienso Hacer Despues?
 Tambien tengo pensado en centrarme mas en el back-end y aprender un poco de sql y php como tambien java para poder hacer el back-end
 
 ![image](https://github.com/alex21232/PaintSplas/assets/110498995/46a8f371-b914-41a1-8e89-08e7c8b788a3)
+
+
+
 
